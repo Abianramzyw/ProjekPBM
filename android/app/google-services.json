@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470201198800",
+    "project_id": "gassin-c1133",
+    "storage_bucket": "gassin-c1133.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470201198800:android:6d37e02c7d1d1722ff96d5",
+        "android_client_info": {
+          "package_name": "com.example.gass_in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470201198800-au9sfs5u1235bebt4a5b5gffbcle114i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOrkZm_sxMooloIpXU9MdJ5Ww_QlZJUKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470201198800-au9sfs5u1235bebt4a5b5gffbcle114i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
