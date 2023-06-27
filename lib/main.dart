@@ -33,8 +33,8 @@ class MyApp extends StatelessWidget {
             bodyMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w400)),
       ),
       debugShowCheckedModeBanner: false,
-      // home: const SplashOnePage(),
-      home: const GPSPage(),
+      home: const SplashOnePage(),
+      // home: const GPSPage(),
     );
   }
 }

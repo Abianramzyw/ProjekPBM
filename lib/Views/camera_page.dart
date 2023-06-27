@@ -179,7 +179,7 @@ class _CameraState extends State<Camera> {
             Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ProfileEdit(),
+                  builder: (context) => BottomNavBar(),
                 ));
           },
           icon: const Icon(Icons.arrow_back),

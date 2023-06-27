@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gass_in/Widgets/bot_nav_bar.dart';
 
 import '../constant.dart';
 
@@ -14,25 +15,16 @@ class ActivitiesPage extends StatelessWidget {
         elevation: 2,
         backgroundColor: Colors.white,
         leadingWidth: 100,
-        leading: Row(
-          children: [
-            const SizedBox(
-              width: 32,
-            ),
-            Image.asset("assets/icons/Polygon.png"),
-            const SizedBox(
-              width: 9,
-            ),
-            const Text(
-              "Back",
-              style: TextStyle(
-                fontWeight: FontWeight.w500,
-                color: Colors.black,
-                decoration: TextDecoration.underline,
-                decorationThickness: 2,
-              ),
-            ),
-          ],
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => BottomNavBar(),
+                ));
+          },
+          icon: const Icon(Icons.arrow_back),
+          color: Colors.black,
         ),
       ),
       body: data.isEmpty
@@ -63,7 +55,13 @@ class ActivitiesPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {},
-                    style: ElevatedButton.styleFrom(elevation: 0, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), minimumSize: const Size(180, 53), backgroundColor: buttonGreen, textStyle: const TextStyle(color: Colors.white)),
+                    style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16)),
+                        minimumSize: const Size(180, 53),
+                        backgroundColor: buttonGreen,
+                        textStyle: const TextStyle(color: Colors.white)),
                     child: const Text("Send Items Now!"),
                   ),
                 ],
@@ -74,9 +72,12 @@ class ActivitiesPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Container(
                   alignment: Alignment.center,
-                  margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 9.6),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 9.6),
                   height: 97.42,
-                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(8)),
                   child: ListTile(
                     leading: Image.asset("assets/images/Vector.png"),
                     title: const Text(
@@ -100,7 +101,9 @@ class ActivitiesPage extends StatelessWidget {
                           Text("Status", style: TextStyle(color: Colors.white)),
                           Text(
                             "Done",
-                            style: TextStyle(color: Color(0xFF068C44), fontWeight: FontWeight.w700),
+                            style: TextStyle(
+                                color: Color(0xFF068C44),
+                                fontWeight: FontWeight.w700),
                           )
                         ],
                       ),

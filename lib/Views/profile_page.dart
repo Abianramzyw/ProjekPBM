@@ -25,7 +25,13 @@ class ProfilePage extends StatelessWidget {
         backgroundColor: Colors.white,
         leadingWidth: 100,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => BottomNavBar(),
+                ));
+          },
           icon: const Icon(Icons.arrow_back),
           color: Colors.black,
         ),
@@ -40,14 +46,14 @@ class ProfilePage extends StatelessWidget {
             ListTile(
               leading: Image.asset("assets/images/profile.png"),
               title: const Text(
-                "Yudis",
+                "Abian",
                 style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 18,
                     color: Colors.black),
               ),
               subtitle: const Text(
-                "yudis@gmail.com",
+                "abian@gmail.com",
                 style: TextStyle(color: Colors.black),
               ),
             ),

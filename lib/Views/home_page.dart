@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
               height: 5,
             ),
             const Text(
-              "Yudis!",
+              "Abian!",
               style: TextStyle(
                   fontSize: 64,
                   color: Color(0xFFCBCBCB),
@@ -105,16 +105,6 @@ class HomePage extends StatelessWidget {
                                       ));
                                 }),
                         ),
-                        //coba
-                        // const Text(
-                        //   "Parcel",
-                        //   style: TextStyle(fontWeight: FontWeight.w700),
-                        // ),
-                        // const Text(
-                        //   "(less than 10kg)",
-                        //   style:
-                        //       TextStyle(fontSize: 11, color: Color(0xFF079A4B)),
-                        // ),
                       ],
                     ),
                   ),
